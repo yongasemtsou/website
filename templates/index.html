@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MEASURE OF "INDICE ANTHROPOMETRIQUE"</title>
+        <link rel="stylesheet" href="{{
+        url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <img src="https://media1.thehungryjpeg.com/thumbs2/ori_3466849_b3678a07bed34d14c2728539d0a93bb42cd6bd0c_health-fit-logo-template.png">
+        <br>
+        <form action="greet" method="post">
+            {% for message in get_flashed_messages()%}
+                <p> {{message}} </p>
+            {% endfor %}
+            <br>
+            <input type='text' name='name_input'>
+            <br>
+            <input type='submit' value='GREET' id='greet'>
+        <form action="measure" method="post">
+            {% for message in get_flashed_messages()%}
+                <p> {{message}}</p>
+            {% endfor %}
+            <br>
+            <input type='number' name='number_input'>
+            <br>
+            <input type='submit' value="IMC" id='measure'>
+        </form>
+        </form>
+    </body>
+</html>
