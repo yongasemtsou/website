@@ -1,4 +1,5 @@
-                                                from flask import Flask, render_template, request, flash
+#https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=1s
+from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 app.secret_key = "majjhsfjkhdkfdfdkjfhdhfjd"
